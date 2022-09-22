@@ -61,7 +61,7 @@ p {
 /* Header logo */
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -418,8 +418,6 @@ p {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-
-  border: 1px solid #eeeeee;
 }
 
 .portfolio-list .item:nth-child(3n) {
@@ -436,6 +434,7 @@ p {
 
 .portfolio-list .text-item {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-title {

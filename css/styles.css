@@ -9,15 +9,6 @@
 }
 
 /* Global styles */
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 
 body {
   color: var(--primary-text-color);
@@ -41,10 +32,30 @@ p {
   text-decoration: none;
 }
 
-.list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section {
@@ -84,9 +95,12 @@ p {
 
 /* Nav section */
 
+.menu-nav {
+  margin-left: 93px;
+}
+
 .page-nav {
   display: flex;
-  margin-left: 93px;
 }
 
 .menu-link {
@@ -205,6 +219,10 @@ p {
   display: flex;
 }
 
+.features-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
   margin-bottom: 10px;
 
@@ -231,7 +249,7 @@ p {
 
 .activity-title,
 .team-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-size: 36px;
   line-height: 1.2;
@@ -244,17 +262,13 @@ p {
 }
 
 .activity-img .item:not(:last-child) {
-  padding-right: 30px;
-}
-
-.activity-img .img {
-  display: block;
+  margin-right: 30px;
 }
 
 /* Our team */
 
 .team {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background-color: #f5f4fa;
 }
 
@@ -271,10 +285,6 @@ p {
 
 .team-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.team-img {
-  display: block;
 }
 
 .team-content {
@@ -302,8 +312,6 @@ p {
 /* Footer section*/
 
 .footer {
-  margin: 0 auto;
-  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -319,9 +327,12 @@ p {
   color: var(--text-white-color);
 }
 
+.footer-address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-location {
   display: inline-block;
-  margin-bottom: 9px;
 
   font-style: normal;
   font-size: 14px;
@@ -333,7 +344,6 @@ p {
 
 .footer-conctact {
   display: inline-block;
-  margin-bottom: 9px;
 
   font-style: normal;
   font-size: 14px;
@@ -364,11 +374,7 @@ p {
 }
 
 .filter-list .item:not(:last-child) {
-  padding-right: 8px;
-}
-
-.section-portfolio {
-  color: var(--primary-text-color);
+  margin-right: 8px;
 }
 
 .filter-btn {
@@ -428,13 +434,10 @@ p {
   margin-bottom: 0;
 }
 
-.portfolio-img {
-  display: block;
-}
-
 .portfolio-list .text-item {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio-title {
